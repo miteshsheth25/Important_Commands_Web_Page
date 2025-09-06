@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+
+        .moving_image-container { 
+            height: 40px;
+            width: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            align-content: center;
+            overflow: hidden;
+        }
+
+        .marquee-container {display: block;
+            animation: marquee 30s linear infinite ;
+        }
+
+        @keyframes marquee { 50% { transform: translateX(88.5%); }
+            150% { transform: translateX(-95%);}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagehomepage.png" width="100%" height="100px" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+
+        <h3 class="text-center mt-5 mb=3"><b><u>Choose Any Topic to Continue</u></b></h3>
+
+        <div class="row d-flex justify-content-center text-center" style="margin-top: 50px;">
+
+            <div class="col-sm-3 imgs">    
+                <a  href="html_imp_codes.html" target="_parent"><img src="images/html 5.png" height="100px" style ="margin: 15px;" ></a><br>
+                <a  href="html_imp_codes.html" target="_parent" class="links  p-2 " style="text-decoration: none; font-weight: bold;">HTML Codes</a>
+            </div>
+
+            <div class="col-sm-3 imgs">
+                <a href="sql_imp_codes.html" target="_parent"><img src="images/sql.png" height="100px" style="margin: 15px; "></a><br>
+                <a href="sql_imp_codes.html" target="_parent" class="links p-2" style="text-decoration: none; font-weight: bold;">SQL codes</a>
+            </div>
+            
+            <div class="col-sm-3 imgs">
+                <a href="javascript_imp_codes.html" target="_parent"><img src="images/javascript.png" height="100px" style="margin: 15px;"></a><br>
+                <a href="javascript_imp_codes.html" target="_parent" class="links p-2" style="text-decoration: none; font-weight: bold;">Java-Script Codes</a>
+            </div>
+
+        </div>
+        
+        
+        <div class="row d-flex justify-content-center text-center" style="margin-top: 50px;">
+
+            <div class="col-sm-3 imgs">    
+                <a  href="nodejs_imp_codes.html" target="_parent"><img src="images/node.png" height="100px" style ="margin: 15px;" ></a><br>
+                <a  href="nodejs_imp_codes.html" target="_parent" class="links  p-2 " style="text-decoration: none; font-weight: bold;">Node.js Codes</a>
+            </div>
+
+            <div class="col-sm-3 imgs">
+                <a href="php_imp_codes.html" target="_parent"><img src="images/php.png" height="100px" style="margin: 15px; "></a><br>
+                <a href="php_imp_codes.html" target="_parent" class="links p-2" style="text-decoration: none; font-weight: bold;">PHP Codes</a>
+            </div>
+            
+            <div class="col-sm-3 imgs">
+                <a href=" " target="_parent"><img src="images/" height="100px" style="margin: 15px;"></a><br>
+                <a href=" " target="_parent" class="links p-2" style="text-decoration: none; font-weight: bold;"> </a>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!--  body area end-->
+    
+    
+    
+</body>
+    <!-- Bottom Section start -->
+
+        <div class="moving_image-container mt-5">
+            <section class="marquee-container">
+                <img src="./images/moving_name1.png"> 
+            </section>
+        </div>
+
+    <!-- Bottom Section end -->
+</html>

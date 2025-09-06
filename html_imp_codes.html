@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Must Know Commands</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagehtml.png" width="100%" height="100px" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+        
+        <!-- 1st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px">1. Doctype Tag</b> - <b style="font-size:20px"><u>&lt;!DOCTYPE html&gt;</u>&nbsp;:-</b> is the very first tag you should include in your HTML code. It tells the browser which version of
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML you’re using, and helps ensure that your code is displayed correctly.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;">&lt;!DOCTYPE html&gt;&nbsp;&nbsp;&nbsp;&nbsp;👈 Doctype tag </p>
+
+        <p style="margin-left: 100px; margin-top: 25px;">Shortcut to write &lt;!DOCTYPE html&gt; is jus write  !  and pres tab or enter </p>
+
+        <hr>
+
+        <!-- 2nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>2. Html Tag - &nbsp;<u>&lt;html&gt;</u>&nbsp;:- This tag marks the beginning of your HTML code. It tells the browser that everything that follows is HTML code.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&gt;&nbsp;&nbsp;&nbsp;&nbsp;👈 html tag open <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;titlel&gt;My Page&lt;/titlel&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to my page!&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>This is some text.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/html&gt;&nbsp;&nbsp;&nbsp;&nbsp;👈 html tag close 
+        </p>
+
+        <hr>
+
+        <!-- 3rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>3. Head Tag - &nbsp;<u>&lt;head&gt;</u>&nbsp;:- The head tag contains information about the document, such as the title of the page, links to stylesheets, and metadata.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&gt;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👈 head tag open <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<u>title</u>&gt;My Page&lt;<u>/title</u>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<u>meta</u> name= "description" content="A description of my page."&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<u>style</u> type="text/css"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body &#123;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p &#123;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; backgroung-color: red;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: black;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: sans-serif;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<u>/style</u>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👈 head tag close <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to my page!&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>This is some text.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/html&gt;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <hr>
+
+        <!-- 4th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>4. Title Tag - &nbsp;<u>&lt;title&gt;</u>&nbsp;:- Defines a title for the document.</b></p>
+        
+        <p style="margin-left: 100px;  margin-top: 25px;">&nbsp;&nbsp;&nbsp;&lt;<u>title</u>&gt;My Page&lt;<u>/title</u>&gt;<br> </p>
+
+        <hr>
+
+        <!-- 5th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>5. Body - &nbsp;<u>&lt;body&gt;</u>&nbsp;:- Defines the document's body.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to my page!&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paraghraph.&lt;/p&gt;<br>
+            &lt;body&gt;
+        </p>
+
+        <hr>
+
+        <!-- 6th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>6. Footer - &nbsp;<u>&lt;footer&gt;</u>&nbsp;:- Defines a footer for a document or section.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;footer&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Author: Hege Refsnes &lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt &lt;a href="mailto:hege@example.com">hege@example.com&lt;/a&gt; &lt;/p&gt;<br>
+            &lt;/footer&gt;
+        </p>
+
+        <hr>
+
+        <!-- 7th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>7. Header - &nbsp;<u>&lt;header&gt;</u>&nbsp;:- Defines a header for a document or section. </b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;header&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; Heading here &lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Posted by John Doe &lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Some additional information here &lt;/p&gt;<br>
+            &lt;/header&gt;
+        </p>
+
+        <hr>
+
+        <!-- 8th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>8. Headings - To create a heading, wrap your text in the heading tags of your choice:</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;">&lt;h1&gt;&lt;/h1&gt; , &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt; , &lt;h4&gt;&lt;/h4&gt; , &lt;h5&gt;&lt;/h5&gt; , &lt;h6&gt;&lt;/h6&gt; ,
+
+
+        <hr>
+
+        <!-- 9th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>9. Paragragh - To get a paragragh, wrap your text in between &lt;p&gt; & &lt;/p&gt; tags.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;p&gt; Hey, I'm a paragraph! &lt;/p&gt;</p>
+
+        <hr>
+
+        <!-- 10th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>10. Links - TO create Link, write the destination website address in between &lt;a&gt; & &lt;/a&gt; </b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;a href="https://www.impactplus.com"&gt;Let's visit IMPACT's awesome website!&lt;/a&gt;</p>
+
+        <hr>
+
+        <!-- 11th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>11. Images - To insert an image.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;img class="lazy" data-src="https://cdn2.hubspot.net/hubfs/145335/Cute-Puppy.jpg" alt="Cute-Puppy" &gt; </p>
+
+        <hr>
+
+        <!-- 12th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>12. Line break - A line break is an space kept between two lines of text by using &lt;br&gt; tag. </b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;p&gt;Place a line break underneath this sentence.<br>&lt;br&gt;<br>Place a line break above this sentence. &lt;/p&gt;</p>
+
+        <hr>
+
+        <!-- 13th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>13. Bold and string - To make something bold, there are two code elements &lt;strong&gt; and &lt;b&gt;.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;strong&gt;Bold a whole sentence!&lt;/strong&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Or <br>
+	        &lt;strong&gt;bold&lt;/strong&gt; one word!
+        </p>
+
+        <hr>
+
+        <!-- 14th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>14. Italic and emphasized - Italic and emphasized text are similar to bold and strong text.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;em&gt;This sentence is super fancy.&lt;/em&gt;   or  &lt;i&gt;This sentence is super fancy.&lt;/i&gt; </p>
+
+        <hr>
+
+        <!-- 15th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>15. Underlined - To underline, wrap the text you want underlined in &lt;u&gt; tags.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> &lt;u&gt;Look, we can underline!&lt;/u&gt;</p>
+
+        <hr>
+
+        <!-- 16th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>16.  Ordered lists - The ordered list contains numbers, and &lt;ol&gt; &lt;/ol&gt; is used.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> 
+            the &lt;li&gt; &lt;/li&gt; is a "list items"
+            <br>
+            <ol>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+            </ol>
+
+        </p>
+
+        <hr>
+
+        <!-- 17th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>17. Unordered lists - The Unordered list is without numbers, the &lt;ul&gt; &lt;/ul&gt; is used.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> the &lt;li&gt; &lt;/li&gt; is a "list items"
+            <br>
+            <ul>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+                <li style="margin-left: 100px;"> This is 1st line.</li>
+            </ul>
+        </p>
+
+        <hr>
+
+        <!-- 18th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>18. Superscript - wrap the text you want to appear superscripted in &lt;sup&gt; &lt;/sup&gt; tags.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> Trademarks should be written in superscript <sup>TM</sup></p>
+
+        <hr>
+
+        <!-- 19th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>19. Subscript - wrap the text you want to appear subscripted in &lt;sub&gt; &lt;/sub&gt; tags.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> Sometimes, <sub>citations</sub> are written in subscript.</p>
+
+        <hr>
+
+        <!-- 20th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>20. Horizontal line - To create a horizontal line just use &lt;hr&gt; between the 2 lines or 2 paragraphs.</b></p>
+        
+        <p style="margin-left: 100px; margin-top: 25px;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert a horizontal line between me and sentence 2.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm sentence 2<br>
+        result:-<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert a horizontal line between me and sentence 2.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________________________________________<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm sentence 2.
+        </p>
+
+        <hr>
+
+        <!-- 21st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>21. Marked or highlighted text - To highlight the text, wrap the text to be highlighted in &lt;mark&gt; &lt;/mark&gt; tags so that you get a cool highlighted feature.</b></p>
+        
+        <p style="margin-left: 100px;"> Only highlight the <mark>most important notes</mark>. </p>
+
+        <hr>
+
+        <!-- 22nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>22. Deleted (cross-through) text - To display the cross-through effect on your text just use &lt;del&gt; &lt;/del&gt; tags.</b></p>
+        
+        <p style="margin-left: 100px;"> <del>Feed the dog.</del><br>
+        <del>Write my blog article.</del><br>
+        Make dinner.	
+        </p>
+
+        <hr>
+
+        <!-- 23rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>23. Short and long quotations - There are 2 different types long quote and short quote.</b></p>
+        
+        <p style="margin-left: 100px;"> a&#41; long quote :-&nbsp;&nbsp;&lt;blockquote&gt;All of this text will be in a blockquote like the rest of the examples.&lt;/blockquote&gt;<br>
+            <blockquote style="margin-left: 260px;">All of this text will be in a blockquote like the rest of the examples.</blockquote><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b&#41; short quote :-&nbsp;&nbsp;&lt;q&gt;I'm quoting this because I'm saying it out loud.&lt;/q&gt;<br><br>
+            <q style="margin-left: 260px;">I'm quoting this because I'm saying it out loud.</q><br>
+        </p>
+
+        <hr>
+
+        <!-- 24th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>24. Setting a specific text color - To specify the text color use color element in style.</b></p>
+        
+        <p style="margin-left: 100px;">&lt;p style="color:blue;">The sky is really blue today.&lt;/p&gt;</p>
+
+        <p style="margin-left: 100px; color:blue;">The sky is really blue today.</p>
+
+        <hr>
+
+        <!-- 25th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>25. Setting a specific text size - To specify the text size use font-size element in style.</b></p>
+        
+        <p style="margin-left: 100px;">&lt;p style="font-size:36px;"&gt;Make this paragraph size 36 font.&lt;/p&gt;</p>
+        <p style="margin-left: 100px; font-size: 36px"> Make this paragraph size 36 font.</p>
+
+        <hr>
+
+        <!-- 26th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>26. Setting a specific text alignment - To specify the text alignment use font-size element in style.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;p style="text=align:center;"&gt;This paragraph should be centered.&lt;/p&gt; </p>
+
+        <p style="margin-left: 100px; text-align:center;">This paragraph should be centered.</p>
+        <hr>
+
+        <!-- 27th commamnd -->
+       
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>27. Tables :- To make it easier to understand, &lt;tr&gt; stands for table row, while &lt;td&gt; stands for table data.</b></p>
+        
+        <p style="margin-left: 150px">
+            &lt;table&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Item 1&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Item 2&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Item 3&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+        </p>
+        <p style="margin-left: 70px;">result :-</p>
+        <p style="margin-left: 150px;"> 
+            <table style="margin-left: 150px;">
+                <tr style="margin-left: 150px;">
+                <td style="margin-left: 150px;">Item 1</td>
+                <td style="margin-left: 150px;">Item 2</td>
+                <td style="margin-left: 150px;">Item 3</td>
+                </tr style="margin-left: 150px;">
+            </table style="margin-left: 150px;">
+        </p>
+
+        <hr>
+
+         <!-- 28th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>28. iframe - &lt;iframe&gt; :- Defines an inline frame.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"&gt;&lt;/iframe&gt;<br>
+        
+        <p style="margin-left: 100px;"><iframe src="https://www.w3schools.com" title="W3Schools Free Online Web 	Tutorials"></iframe></p>
+
+        <hr>
+        
+        <!-- 29th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>29. Input - &lt;input&gt; :- Defines an input control.</b></p>
+        
+        <p style="margin-left: 150px;">
+            &lt;form action="/action_page.php"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="fname"&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;input type="text" id="lname" name="lname"&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+            &lt;/form>
+        </p><br>
+        <p style="margin-left: 70px;">result :-
+        <form style="margin-left: 150px;" action="/action_page.html">
+		  <label style="margin-left: 50px;" for="fname">First name:</label>
+          <input style="margin-left: 50px;" type="text" id="fname" name="fname"><br><br>
+		  <label style="margin-left: 50px;" for="lname">Last name:</label>
+		  <input style="margin-left: 50px;" type="text" id="lname" name="lname"><br><br>
+		  <input style="margin-left: 150px;" type="submit" value="Submit">
+		</form>
+
+        </p>
+        <hr>
+
+        <!-- 30th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>30. Lable - &lt;label&gt; :- Defines the label for an input element of form.</b></p>
+        
+        <p style="margin-left: 100px;">
+            &lt;label for="fname"&gt;First name:&lt;/label&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="fname">First name:</label><br>
+        </p>
+
+        <hr>
+
+        <!-- 31st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>31. Inserted text - &lt;ins&gt; :- Defines a text that has been inserted into a document.</b></p>
+            
+        <p style="margin-left: 100px;">
+            &lt;p&gt;My favourite color is &lt;ins&gt;red&lt;/ins&gt;!&lt;/p&gt;
+        </p>
+
+        <p style="margin-left: 140px;">My favourite color is <ins>red</ins>!</p>
+
+        <hr>
+
+        <!-- 32nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>32. Link - <link> :- Defines the relationship between a document and an external resource mostly used to link to (style sheets).</b></p>
+            
+        <p style="margin-left: 100px;">
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+            &lt;/head&gt;
+
+         </p>
+ 
+        <hr>
+
+        <!-- 33rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>33. Main - &lt;main&gt; :- Specifies the main content of a document .</b></p>
+            
+        <p style="margin-left: 100px;">
+            &lt;main&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Most Popular Browsers&lt;h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;p&gt;Chrome, Firefox, and Edge are the most used browser today.&lt;/p&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&lt;article&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Google Chrome&gt;/h2&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+            &lt;/main&gt;
+        </p>
+
+        <hr>
+
+        <!-- 34th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>34. Map - &lt;map&gt; :- Defines an image of map.</b></p>
+            
+        <p style="margin-left: 100px;">
+
+            &lt;map name="workmap"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"<br>
+            &nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html"<br>
+            &nbsp;&nbsp;&nbsp;&lt;area shape="circle" coords="337,300,344" alt="Cup of Coffee" href="cofee.html"<br>
+            &lt;/map&gt;                
+        </p>
+ 
+        <hr>
+
+        <!-- 35th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>35. Output - &lt;output&gt; :- Defines the result of a calculation.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;form oninput="x.values=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;input type="range" id="a" value="50"&gt;<br>
+            &nbsp;&nbsp;&nbsp;+ &lt;input type="number" id="b" value="25"&gt;<br>
+            &nbsp;&nbsp;&nbsp;= &lt;output name="x" for="a b"&gt; &lt;/output&gt;<br>
+            &lt;/form&gt;
+        </p>
+ 
+        <hr>
+
+        <!-- 36th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>36. S - &lt;s&gt; :- Defines text taht is no longer correct. The text will be displayed with a line through it.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;p&gt;&lt;s&gt;Only50 tickets left!&lt;/s&gt;&lt;/p&gt;<br>
+            &lt;p&gt;SOLD OUT!&lt;/p&gt;<br>
+            <p style="margin-left: 50px;">result :-</p>
+            <p style="margin-left: 100px;"><s>Only 50 tickets left!</s></p>
+            <p style="margin-left: 100px;">SOLD OUT!</p>
+        </p>
+ 
+        <hr>
+
+        <!--<div style="border: 1px solid black;"></div> -->
+        <!-- 37th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>37. Script - &lt;script&gt; :- Defines a client-side script.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;script&gt;<br>
+            &nbsp;&nbsp;document.getElementById("demo").innerhtml = "Hello Javascript !";<br>
+            &lt;/script&gt;
+        </p>
+
+        <hr>
+
+        <!-- 38th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>38. Section - &lt;section&gt; :- Defines the section in a document.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;section&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;WWF History&lt;/h2&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The World Wide Fund for Nature (WWF) is a international organization<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;working on issues regarding the conservation, research and restoration of the <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.<br>
+            &lt;/section&gt;
+        </p>
+
+        <hr>
+
+        <!-- 39th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>39. Track - &lt;track&gt; :- Defines text tracks for media elements ( &lt;video&gt; and &lt;audio&gt; ) .</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;<br>
+            &lt;track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
+        </p>       
+
+        <hr>
+
+        <!-- 40th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>40. Variable - &lg;var&gt; :- is used to define a variable in programming or in a mathematical expression.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;p&gt;The area of triangle is : 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt; where &lt;var&gt;b&lt;/var&gt; is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.<br>
+        </p>
+
+        <hr>
+
+        <!-- 41st command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>41. Video - &lt;video&gt; :-</b></p>
+                    
+        <p style="margin-left: 100px;">
+            &lt;video width="320" height="240" controls&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;<br>
+            &lt;/video&gt;
+        </p>
+        
+        <hr>
+
+    </div>
+    <div class="text-center" style="margin: 20px;" >        
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+    <!--  body area end-->
+</body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL - Must Know Commands</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagesql.png" width="100%" height="100%" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+        <h3 class="text-center mt-3"><b><u>For Database</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px"><u>Database</u></b> is a collection of inter-related data whichis used to <b>retrieve</b>, <b>insert</b> and <b>delete</b> data efficiently. It is also used to organize the data in the form of <b>table</b>, <b>schema</b>, <b>views</b> and <b>reports.</b></p>
+
+        <hr>
+        <!-- 1st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>1. To create a database.</b></p>
+        
+        <p style="margin-left: 100px;"> create database if not exists database_name;</p>
+
+        <hr>
+
+        <!-- 2nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>2. To use database.</b></p>
+        
+        <p style="margin-left: 100px;"> use database_name;</p>
+
+        <hr>
+
+        <!-- 3rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>3. To permanently remove the database.</b></p>
+        
+        <p style="margin-left: 100px;"> drop database if exists database_name;</p>
+
+        <hr>
+
+        <!-- 4th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>4. To see the list of database.</b></p>
+        
+        <p style="margin-left: 100px;"> show databases;</p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>For Table</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px"><u>Table</u></b> is used to organize data in the form of rows and columns and used for both storing and displaying records in the structure format.</p>
+
+        <hr>
+
+
+        <!-- 5th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>5. To create a table.</b></p>
+        
+        <p style="margin-left: 100px;"> create table if not exists table_name (<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Column_name1 datatype,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Column_name2 datatype,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Column_name3 datatype);
+        </p>
+
+        <hr>
+
+        <!-- 6th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>6. To see list of tables.</b></p>
+        
+        <p style="margin-left: 100px;"> show tables;</p>
+
+        <hr>
+
+        <!-- 7th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>7. To insert values in table.</b></p>
+        
+        <p style="margin-left: 100px;"> insert into table_name values (001, ‘Ashish’,94);</p>
+
+        <hr>
+
+        <!-- 8th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>8. To insert multiple rows in 1 go.</b></p>
+        
+        <p style="margin-left: 100px;"> insert into emp_details values<br>
+            &nbsp;&nbsp;&nbsp;( 1256323, 'Mitesh H Sheth', 'HR', 30000),<br>
+            &nbsp;&nbsp;&nbsp;( 1256313, 'Vineet Desai', 'HR', 35000);</p>
+
+        <hr>
+
+        <!-- 9th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>9. To add new column to the table.</b></p>
+        
+        <p style="margin-left: 100px;"> alter table table_name add column column_name datatype;</p>
+
+        <hr>
+
+        <!-- 10th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>10. To remove a column from table.</b></p>
+        
+        <p style="margin-left: 100px;"> alter table table_name drop column column_name;</p>
+
+        <hr>
+
+        <!-- 11th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>11. To permanently remove the table.</b></p>
+        
+        <p style="margin-left: 100px;"> drop table if exists table_name;</p>
+
+        <hr>
+
+        <!-- 12th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>12. To see the information of a column of a table.</b></p>
+        
+        <p style="margin-left: 100px;"> describe table_name column_name;</p>
+
+        <hr>
+
+        <!-- 13th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>13. To see a list of all commands.</b></p>
+        
+        <p style="margin-left: 100px;"> help;</p>
+
+        <hr>
+
+        <!-- 14th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>14. To see the structure of table.</b></p>
+        
+        <p style="margin-left: 100px;"> describe table_name;</p>
+
+        <hr>
+
+        <!-- 15th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>15. To see the data in the table.</b></p>
+        
+        <p style="margin-left: 100px;"> select * from table_name;</p>
+
+        <hr>
+
+        <!-- 16th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>16. To see data of selected columns from table.</b></p>
+        
+        <p style="margin-left: 100px;"> select column_name-1, column_name-2 from table_name;</p>
+
+        <hr>
+
+        <!-- 17th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>17. To get the number of rows in the table.</b></p>
+        
+        <p style="margin-left: 100px;"> select count(*) from table_name;</p>
+
+        <hr>
+
+        <!-- 18th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>18. To delete all records from table.</b></p>
+        
+        <p style="margin-left: 100px;"> truncate table_name;   or  delete from table_name;</p>
+
+        <hr>
+
+        <!-- 19th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>19. To delete particular row from the table.</b></p>
+        
+        <p style="margin-left: 100px;"> delete from emp_details where emp_id = 1256326;</p>
+
+        <hr>
+
+        <!-- 20th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>20. To select record using Where clause.</b></p>
+        
+        <p style="margin-left: 100px;"> select column_name from table_name where condition;</p>
+
+        <hr>
+
+        <!-- 21st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>21. To update the value of the column using where clause.</b></p>
+        
+        <p style="margin-left: 100px;"> update emp_details set salary = 35000 where emp_full_name = Vineet Desai;</p>
+
+        <hr>
+
+        <!-- 22nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>22. To disable safe mode in mysql workbench.</b></p>
+        
+        <p style="margin-left: 100px;"> set sql_safe_updates = 0;</p>
+
+        <hr>
+
+        <!-- 23rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>23. Copy all columns from one table to another table.</b></p>
+        
+        <p style="margin-left: 100px;"> insert into tab2 select * from emp_details;</p>
+
+        <hr>
+
+        <!-- 24th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>24. To create new table from existing table using a specific columns.</b></p>
+        
+        <p style="margin-left: 100px;"> create table tab2 select emp_full_name, emp_dept from emp_details;</p>
+
+        <hr>
+
+        <!-- 25th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>25. To create new table from existing table with all columns.</b></p>
+        
+        <p style="margin-left: 100px;"> create table tab2 select * from emp_details;</p>
+
+        <hr>
+
+        <!-- 26th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>26. To delete columns from table.</b></p>
+        
+        <p style="margin-left: 100px;"> alter table table_name drop column column_name;</p>
+
+        <hr>
+
+        <!-- 27th commamnd -->
+       
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>27. To insert null value in table. You have to write the names of columns where the value has to be inserted and the other columns will show null.</b></p>
+        
+        <p style="margin-left: 100px;"> insert into employee (id,name,salary,dept_name,city) <br>
+            &nbsp;&nbsp;&nbsp;values (102,"Riya",45000,"sales","surat");</p>
+
+        <hr>
+
+         <!-- 28th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>28. To auto add id value in table & make a column unique.</b></p>
+        
+        <p style="margin-left: 100px;"> create table employee1 (<br>
+            &nbsp;&nbsp;&nbsp;id int <u><b>primary key auto_increment</b></u>,<br>
+            &nbsp;&nbsp;&nbsp;name varchar(40),<br>
+            &nbsp;&nbsp;&nbsp;salary int,<br>
+            &nbsp;&nbsp;&nbsp;date_of_join date,<br>
+            &nbsp;&nbsp;&nbsp;dept_name enum("it","Sales","hr","other"),<br>
+            &nbsp;&nbsp;&nbsp;city varchar(40),<br>
+            &nbsp;&nbsp;&nbsp;email varchar(50) <u><b>unique key</b></u>,<br>
+            &nbsp;&nbsp;&nbsp;mobile_number varchar(20) unique key<br>
+        ); </p>
+
+        <hr>
+        
+        <!-- 29th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>29. To use &nbsp;<u>< , > , =</u>&nbsp; with where clause in table.</b></p>
+        
+        <p style="margin-left: 100px;">
+           1) select customername,phone,city,country,creditlimit from customers where creditlimit <b><</b> 50000;<br>
+            <br>
+           2) select customername,phone,city,country,creditlimit from customers where creditlimit <b>></b> 50000;<br>
+            <br>
+           3) select customername,phone,city,country,creditlimit from customers where creditlimit <b>=</b> 0.0;<br>
+        </p>
+
+        <hr>
+
+        <!-- 30th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>30. To use &nbsp;<u>or</u>&nbsp; with where clause in table.</b></p>
+        
+        <p style="margin-left: 100px;">
+            select customername,phone,city,state,country,creditlimit from customers where creditlimit > 50000 <b>or</b> country = "USA";
+        </p>
+
+        <hr>
+
+        <!-- 31st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>31. To use &nbsp;<u>and</u>&nbsp; with where clause in table.</b></p>
+            
+        <p style="margin-left: 100px;">
+            select customername,phone,city,state,country,creditlimit from customers where creditlimit > 50000 <b>and</b> country = "USA";
+        </p>
+
+        <hr>
+
+        <!-- 32nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>32. To use <u>Like</u> clause in table.</b></p>
+            
+        <p style="margin-left: 100px;">
+            1) For finding any values that end with <u>salary</u>   <br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from emp_details where "%salary";<br><br>
+ 
+            2) For finding any values that starts with <u>35000</u><br><br>
+             
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from emp_details where emp_salary like "35000%";<br><br>
+            
+            3) For finding any values that have <u>full</u> in any position<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from emp_details where "%full%";<br><br>
+         </p>
+ 
+        <hr>
+
+        <!-- 33rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>33. Use of <u>limit</u> clause to find X number / percent of records from table.</b></p>
+            
+        <p style="margin-left: 100px;">
+            select * from emp_details limit 2;
+        </p>
+
+        <hr>
+
+        <!-- 34th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>34. To use <u>order by</u> clause to sort the data in ascending or descending order based on 1 or more columns.</b></p>
+            
+        <p style="margin-left: 100px;">
+            
+            1) For ascending order<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from emp_details order by emp_salary;<br><br>
+ 
+            2) For descending order<br><br>
+             
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from emp_details order by emp_salary desc;<br><br>
+                        
+         </p>
+ 
+        <hr>
+
+        <!-- 35th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>35. <u>Group By</u> clause is used in collaboration with SELECT statement to arrange data in groups.</b></p>
+
+        <p style="margin-left: 100px;">
+            select productName, quantityInStock from products group by productCode;
+        </p>
+ 
+        <hr>
+
+        <!-- 36th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>36. <u>Distinct keyword</u> is used with SELECT statement to eliminate all duplicate records and fetch only unique records.</b></p>
+
+        <p style="margin-left: 100px;">
+            select distinct emp_full_name, emp_salary from emp_details order by emp_full_name;
+        </p>
+ 
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Different Types of Constraints</u></b></h3>
+
+        <hr>
+        
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px"><u>Constraints</u></b> are rules enforced on data column on table They are used to limit the type of data that can go into the table for accuracy and reliability of the data. Constrainnts can be applied at column or table level.</p>
+
+        <hr>
+
+        <!-- 37th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>37. <u>Not Null Constraint</u> - Ensures that column cannot nave NUll value.</b></p>
+
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int Not Null,<br>
+            &nbsp;&nbsp;Name varchar(20) Not Null,<br>
+            &nbsp;&nbsp;Age int Not Null,<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2),<br>
+            );
+        </p>
+
+        <hr>
+
+        <!-- 38th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>38. <u>Default Constraint</u> - Provides a default value for the column when none is specified.</b></p>
+
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int Not Null,<br>
+            &nbsp;&nbsp;Name varchar(20) Not Null,<br>
+            &nbsp;&nbsp;Age int Not Null,<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2) <b>DEFAULT</b> 5000.00,<br>
+            );
+        </p>
+
+        <p style="margin-left: 50px; margin-top: 15px;">To drop default constraint use :- Alter table customers alter column Salary drop default;</p>
+
+        <hr>
+
+        <!-- 39th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>39. <u>Unique Constraint</u> - This prevents two records from having the same values in aparicular column .</b></p>
+
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int Not Null,<br>
+            &nbsp;&nbsp;Name varchar(20) Not Null,<br>
+            &nbsp;&nbsp;Age int Not Null <b>UNIQUE</b>,<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2),<br>
+            )
+        </p>
+
+        <p style="margin-left: 50px; margin-top: 15px;">To add constraint to multiple columns use :- Alter table customers add myUniqueConstraint UNIQUE(Age, Salary);</p>
+
+        <hr>
+
+        <!-- 40th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>40. <u>Primary Key</u> - It is a field which uniquely identifies each row/record in the database table. Priomary key column must contain unique value and cannot have &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Null value</b></p>
+
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int Not Null <b>Primary key</b>,<br>
+            &nbsp;&nbsp;Name varchar(20) Not Null,<br>
+            &nbsp;&nbsp;Age int Not Null <b>UNIQUE</b>,<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2),<br>
+            )
+        </p>
+
+        <hr>
+
+        <!-- 41st command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>41. <u>Foreign Key</u> - It is used to link 2 tables togather. It is called refrence key. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Null value</b></p>
+        
+            <div class="col-sm-10 d-flex justify-content-center">
+                
+                <div class="col-sm-4">
+                    <p style="margin-left: 100px;">
+                        Create table customers (<br>
+                        &nbsp;&nbsp;ID int NotNull <b>Primary key</b>,<br>
+                        &nbsp;&nbsp;Name varchar(20) NotNull,<br>
+                        &nbsp;&nbsp;Age int Not Null,<br>
+                        &nbsp;&nbsp;Address char(25),<br>
+                        &nbsp;&nbsp;Salary decimal(18,2),<br>
+                        );
+                    </p>
+                </div>
+
+                <div class="col-sm-5">
+                    <p style="margin-left: 100px;">
+                        Create table Orders (<br>
+                        &nbsp;&nbsp;ID int NotNull <b>Primary key</b>,<br>
+                        &nbsp;&nbsp;Date DateTime,<br>
+                        &nbsp;&nbsp;<b>customers_id int refrences customers(ID)</b>,<br>
+                        &nbsp;&nbsp;Amount double,<br>
+                        );
+                    </p>
+                </div>
+
+            </div>
+            
+            <p style="margin-left: 50px; margin-top: 15px;">To drop Foreign constraint use :- Alter table Orders drop Foreign key;</p>
+        </p>
+
+        <hr>
+
+        <!-- 42nd command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>42. <u>Check Constraints</u> - It  enables a condition to check the value being entered into the record. If the conditon is false the record is not entered into the table. </b></p>
+            
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int NotNull <b>Primary key</b>,<br>
+            &nbsp;&nbsp;Name varchar(20) NotNull,<br>
+            &nbsp;&nbsp;Age int Not Null CHECK(Age>=18),<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2),<br>
+            );
+        </p>
+        
+        <hr>
+
+        <!-- 43rd command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>43. <u>Index Constraints</u> - It is used to create and retrieve data from database very quickly. It can be created using single or group of columns in a table. When &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;created it is assigned a ROWID for each row before it sorts the data. </b></p>
+            
+        <p style="margin-left: 100px;">
+            Create table customers (<br>
+            &nbsp;&nbsp;ID int NotNull <b>Primary key</b>,<br>
+            &nbsp;&nbsp;Name varchar(20) NotNull,<br>
+            &nbsp;&nbsp;Age int Not Null,<br>
+            &nbsp;&nbsp;Address char(25),<br>
+            &nbsp;&nbsp;Salary decimal(18,2),<br>
+            );
+        </p>
+
+        <p style="margin-left: 100px;"><b>Now to create index write</b> :-  Create Index idx_age on customers(age)</p>
+        
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Different Types of Joins clause</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px"><u>Joins clause</u></b> are used to combine records from 2 or more tables in database. In this atleat 1 data value should be common to each. </p>
+
+        <hr>
+
+        <!-- 44th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>44. <u>Inner Join (EQUI JOIN)</u> - It returns rows when there is a match in both tables.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Select ID, Name, Amount, Date from customers <b>inner</b> join orders on customer.ID = orders.customer_ID;
+        </p>
+
+        <hr>
+
+        <!-- 45th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>45. <u>Left Join</u> - It returns all rows from left table plus matched values from right table or NULL in case no matching values.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Select ID, Name, Amount, Date from customers <b>left</b> join orders on customer.ID = orders.customer_ID;
+        </p>
+
+        <hr>
+
+        <!-- 46th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>46. <u>Right Join</u> - It returns all rows from right table plus matched values from left table or NULL in case no matching values.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Select ID, Name, Amount, Date from customers <b>right</b> join orders on customer.ID = orders.customer_ID;
+        </p>
+
+        <hr>
+
+        <!-- 47th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>47. <u>Full Join</u> - It returns all records from right and left table and fill NULL in case no matching values.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Select ID, Name, Amount, Date from customers <b>full</b> join orders on customer.ID = orders.customer_ID;
+        </p>
+
+        <hr>
+
+        <!-- 48th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>48. <u>Self Join</u> - In this, join is done to itself as if the table are tow tables, temporarily renaming at least one table.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Select a.ID, a.Name, a.Amount, a.Date from customers1 a, customers1 b where a.customer.ID = b.customers.ID;
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <!-- 49th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>49. <u>Union clause / operator</u> - used to combine the results of two or more SELECT statements without returning any duplicate rows.</b></p>
+            
+        <p style="margin-left: 100px;"> 
+            1. Union:-<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select ID, Name, Amount, Date from customers Left join orders on customer.ID = orders.customer_ID;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>UNION</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select ID, Name, Amount, Date from customers Right join orders on customer.ID = orders.customer_ID;
+            <br><br>
+            2. Union All:-<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select ID, Name, Amount, Date from customers Left join orders on customer.ID = orders.customer_ID Union All;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>or</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select ID, Name, Amount, Date from customers Right join orders on customer.ID = orders.customer_ID Union All;
+        </p>
+
+        <hr> 
+
+        <!-- 50th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>50. <u>Having clause</u> - It enables you to specify conditions that filter which group results appear in the final result. This clause places conditions on groups created by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GROUP BY clause</b></p>
+            
+        <p style="margin-left: 100px;">
+            select  customerName, country, sum(creditlimit) as total_limit from customers group by country having sum(creditlimit) < 100000;
+        </p>
+
+        <hr>
+
+        <!-- 51st command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>51. <u>View</u> - It is a virtual table based on the result-set. A view contains rows and columns like real table. Thefields in view are from one or more real tables. This &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;view saved in database for future use </b></p>
+            
+        <p style="margin-left: 100px;">
+            create view credit_limit as<br>
+            select  customerName, country, sum(creditlimit) as total_limit<br>
+            from customers group by country having sum(creditlimit) < 100000; 
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>SQL Database Transaction</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b style="font-size:20px"><u>Database Transaction</u></b> is a single area of the database where multiple data operations are carried out and written as a whole. These operations can be create,<br>
+            read, update, or delete operations. For a transaction to be successful, it means that every operation carried out has been committed. </p>
+
+        <hr>
+        
+        <!-- 52nd command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>52. <u>Start Transaction / Begin</u> - this query triggers the start of a transaction.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Start Transaction;
+        </p>
+
+        <hr>
+
+        <!-- 53rd command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>53. <u>Commit Transaction</u> - this query allows the changes made to the database to become permanent. You can set database to auto-commit changes by using the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;following query.</b></p>
+            
+        <p style="margin-left: 100px;">
+            1. Set autocommit = 1; (to automatically save changes)<br>
+            <br>
+            2. Set autocommit = 0; (to stop saving changes automatically)
+        </p>
+
+        <hr>
+
+        <!-- 54rd command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>54. <u>Savepoint Transaction</u> - use the SAVEPOINT statement within a transaction to set savepoints. This makes it possible for you to rollback to a specific point in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the transaction, rather than rolling back the entire transaction.</b></p>
+            
+        <p style="margin-left: 100px;">
+            SAVEPOINT savepointname;
+        </p>
+
+        <hr>
+
+        <!-- 55th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>55. <u>Set Transaction</u> - this query allows you to set your commit by enabling the operations to commit automatically or disabling the auto-commit. You can set<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database to auto-commit changes by using the following query.</b></p>
+            
+        <p style="margin-left: 100px;">
+            1. Set autocommit = ON; (to automatically save changes)<br>
+            <br>
+            2. Set autocommit = OFF; (to stop saving changes automatically)
+        </p>
+
+        <hr>
+
+        <!-- 56th command -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>56. <u>Rollback Transaction</u> - this query allows you to undo the changes you have made to the database, therefore returning the database to its previous<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(last commit) state.</b></p>
+            
+        <p style="margin-left: 100px;">
+            Rollback;
+        </p>
+
+        <hr>
+
+    </div>
+    <div class="text-center" style="margin: 20px;" >        
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+    <!--  body area end-->
+</body>
+</html>

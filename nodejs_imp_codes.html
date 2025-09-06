@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS - Must Know Commands</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+
+        
+        .transparent-table,
+        .transparent-table th,
+        .transparent-table td {
+            background-color: transparent !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagenode.png" width="100%" height="100%" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+        
+        <!-- 1st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>1. To setup Node.js Enviroment.</b></p>
+        
+        <p style="margin-left: 100px;"> a) Install Node.js from the nodejs.org<br>
+            b) Verify Installation : - Open VS code terminal or command prompt and run<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node -v<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm -v
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Most Commonly Used NPM Commands</u></b></h3>
+
+        <hr>
+
+        <!-- 2nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>2. npm init - it  initializes a new Node.js project by generating a package.json file containing metadata about the project and its dependencies.</b></p>
+        
+        <p style="margin-left: 100px;"> npm init</p>
+
+        <hr>
+
+        <!-- 3rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>3.  npm install -  installs all the dependencies listed in your package.json file. It also allows you to install specific packages globally or locally within a project.</b></p>
+        
+        <p style="margin-left: 100px;">a) Install dependencies :- npm install<br>
+        b) Install specific package locally :-  npm install &lt;package-name&gt;&lt;/package-name&gt;<br>
+        c) Install specific package globally :-  npm install -g &lt;package-name&gt;&lt;/package-name&gt;</p>
+
+        <hr>
+
+        <!-- 4th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>4. npm uninstall ( or npm rm ) - removes a package from your project. It also removes the dependency from the package.json file.</b></p>
+        
+        <p style="margin-left: 100px;"> npm uninstall &lt;package-name&gt;
+        </p>
+
+        <hr>
+
+        <!-- 5th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>5. npm update - it updates all installed packages to their latest versions according to the version range specified in the package.json.</b></p>
+        
+        <p style="margin-left: 100px;"> npm update</p>
+
+        <hr>
+
+        <!-- 6th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>6. npm outdated - using this command, developers can get a list of packages that have newer versions available but are not installed yet in the package.json.</b></p>
+        
+        <p style="margin-left: 100px;">npm outdated</p>
+
+        <hr>
+
+        <!-- 7th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>7. npm run - you can run a custom script specified in the scripts section of your package.json. You might use it to test, start servers, or bundle your files.</b></p>
+        
+        <p style="margin-left: 100px;"> npm run &lt;script-name&gt;</p>
+
+        <hr>
+
+        <!-- 8th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>8. npm list - It displays the tree (a comprehensive list) of installed packages, listing all of your project’s dependencies in one place.</b></p>
+        
+        <p style="margin-left: 100px;"> npm list </p>
+
+        <hr>
+
+        <!-- 9th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>9. npm cache clean - it cleans the cache. Cleaning the cache solves issues with package installation.</b></p>
+        
+        <p style="margin-left: 100px;"> npm cache clean --force </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Other Commands</u></b></h3>
+
+        <hr>
+
+        <!-- 10th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>10. To create a html file in node.js from VS code run the below code.</b></p>
+        
+        <p style="margin-left: 100px;"> New-Item trial.html - Item Type File</p>
+
+        <hr>
+
+        <!-- 11th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>11. To delete a html file in node.js from VS code run the below code.</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            a) In VS code terminal :- Remove-Item trial.html<br>
+
+        	b) In cmd.exe / command prompt from VS code : - del trial.html 
+        </p>
+
+        <hr>
+
+        <!-- 12th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>12. To start the app.js file in node.js :- ( This will run the file in the console or terminal ) .</b></p>
+        
+        <p style="margin-left: 100px;"> PS C:\Users\mites\Desktop\Node-js-lecture\29_April_2025>node app </p>
+
+        <hr>
+
+        <!-- 13th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>13. To Read and process an HTML file in Node.js .</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            a) Install Required Package - Install cheerio to parse the HTML file.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm install cheerio<br><br>
+            b) Create and Read the HTML File<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create a file and name it sample.html<br><br>
+            c) Read and Parse the HTML in Node.js<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create a Node.js script file and name it app.js<br><br>
+            d) Run the Script file<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node app.js
+        </p>
+
+        <hr>
+
+        <!-- 14th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>14. To start the index.html file in node.js :- ( This will run the file in web browser)</b></p>
+        
+        <p style="margin-left: 100px;"> PS C:\Users\mites\Desktop\Node-js-lecture\29_April_2025> start index.html</p>
+
+        <hr>
+
+        <!-- 15th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>15. To Connect Node.js with MySQL</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            a) The following is required to connect Node.js a with MySQL<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Node.js version 12 and above<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) MySQL<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) MySQL Workbench or CLI-(for database management )<br><br>
+            b) Create a new database and table<br><br>
+            c) Create a Node.js Project<br><br>
+            d) Install mysql12 package<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm installmysql12<br><br>
+            e) Connect Node.js to MySQL using the below script<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const mysql = require('mysql2');<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const db = mysql.createConnection({<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;host: 'localhost',<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user: 'root',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Replace with your MySQL username<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: '',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Replace with your MySQL password<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: 'testdb'<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;db.connect((err) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (err) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.error('Database connection failed:', err.message);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('Connected to MySQL database!');<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module.exports = db;<br><br>
+            f ) Perform CRUD operations by creating a file app.js as below<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const db = require('./db');<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Create a new user<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const newUser = { name: 'John Doe', email: 'john@example.com' };<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;db.query('INSERT INTO users SET ?', newUser, (err, result) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (err) throw err;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('User inserted with ID:', result.insertId);<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Fetch all users<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;db.query('SELECT * FROM users', (err, results) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (err) throw err;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('All Users:', results);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br><br>
+            g) Fixing common MySQL Authentication Error<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if below error is shown<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol mrequested by server<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solution: - Run the below code<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password'; FLUSH PRIVILEGES;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) CREATE USER 'nodeuser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRANT ALL PRIVILEGES ON testdb.* TO 'nodeuser'@'localhost';
+
+        </p>
+
+        <hr>
+
+        <!-- 16th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>16. To create a new item in Node.js using Terminal.</b></p>
+        
+        <p style="margin-left: 100px;"> New-Item db.js -ItemType File</p>
+
+        <hr>
+
+        <!-- 17th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>17. To remove an existing item in Node.js using Terminal.</b></p>
+        
+        <p style="margin-left: 100px;"> remove-item dg.js</p>
+
+        <hr>
+
+        <!-- 18th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>18. .</b></p>
+        
+        <p style="margin-left: 100px;"> </p><br>
+
+        <hr>
+
+    </div>
+    <div class="text-center" style="margin: 20px;" >        
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+    <!--  body area end-->
+</body>
+</html>

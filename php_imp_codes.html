@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Must Know Commands</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+
+        
+        .transparent-table,
+        .transparent-table th,
+        .transparent-table td {
+            background-color: transparent !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagephp.png" width="100%" height="100%" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+
+        <h3 class="text-center mt-3"><b><u>Basics</u></b></h3>
+
+        <hr>
+
+        
+        <!-- 1st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>1. echo :- is used to display text or data on a web page or in the command line. It outputs strings or variables directly to the browser and is commonly used to<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show dynamic content like form results or HTML. It's a fundamental tool in PHP for creating dynamic web applications.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+                                        &nbsp;&nbsp;&nbsp;echo "&lt;h4&gt;Welcome to My Website&lt;/h4&gt;";<br>
+                                        ?&gt; </p>
+
+        <hr>
+
+        <!-- 2nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>2. print :- is used to output text or data to the screen, similar to echo. However, it has some key differences:</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            1) print accepts only one argument, while echo can take multiple.<br>
+
+            2) print returns a value (1) after execution, making it usable in expressions, whereas echo does not return a value.
+        
+            <p style="margin-left: 250px;">For eg:- print "text to be displayed";</p>
+        </p>
+
+        <hr>
+
+        <!-- 3rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>3.  if :- statement is a conitional statement that is used to execute code only if a certain condition is met.</b></p>
+        
+        <p style="margin-left: 100px;"> if (condition) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if condition is true<br>
+        }</p>
+
+        <hr>
+
+        <!-- 4th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>4. else :- statement is often used in conjunction with the “if” statement to execute code when the condition is false. The basic syntax of the “if-else” statement is as follows:</b></p>
+        
+        <p style="margin-left: 100px;"> if (condition) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if condition is true<br>
+            } else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if condition is false<br>
+            }
+        </p>
+
+        <hr>
+
+        <!-- 5th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>5. switch - statement is anoter type of conditional statement that can be used to execute different blocks of code based on te value of the variable or expression.</b></p>
+        
+        <p style="margin-left: 100px;"> switch (expression) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;case value1:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if expression is equal to value1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;case value2:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if expression is equal to value2<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// more cases can be added as needed<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// code to be executed if expression does not match any of the cases above<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+        }
+        </p>
+
+        <hr>
+
+        <!-- 6th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>6. for - The “for” loop is a type of iteration statement that allows you to execute a block of code a specific number of times.</b></p>
+        
+        <p style="margin-left: 100px;"> for (initialization; condition; increment) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;// code to be executed<br>
+        }
+        <p style="margin-left: 100px; margin-top: 20px" >
+            <ul>
+            <li style="margin-left: 100px;">Initialization: Sets the starting value of a counter variable.</li>
+            <li style="margin-left: 100px;">Condition: A boolean expression checked before each iteration; if false, the loop stops.</li>
+            <li style="margin-left: 100px;">Increment: Updates the counter after each loop cycle.</li>
+            </ul>
+        </p>
+        </p>
+
+        <hr>
+
+        <!-- 7th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>7. while - This loop runs a block of code as long as a given condition is true. The condition is evaluated before each iteration, and if it's false, the loop stops.</b></p>
+        
+        <p style="margin-left: 100px;"> while (condition) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;// code to be executed<br>
+        }
+        </p>
+
+        <hr>
+
+        <!-- 8th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>8. foreach - loop is used to iterate over arrays or other iterable structures. It automatically goes through each element, assigning its value to a variable during each iteration.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+        $fruits = ["apple", "banana", "cherry"];<br>
+        <br>    
+        foreach ($fruits as $fruit) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;echo $fruit .;<br>
+        }<br>
+        ?>
+        </p>
+
+        <hr>
+
+        <!-- 9th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>9. function - is a reusable block of code that performs a specific task. You define it once and can call it multiple times throughout your program. Functions help<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make your code modular, organized, and easier to maintain by encapsulating logic into named sections..</b></p>
+        
+        <p style="margin-left: 100px;"> 
+        &lt;?php<br>
+        &nbsp;&nbsp;&nbsp;function greet($name) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hello, $name!";<br>
+        &nbsp;&nbsp;&nbsp;}<br><br>
+        &nbsp;&nbsp;&nbsp;greet("Alice");<br>
+        ?&gt;
+        </p>
+
+        <hr>
+
+        <!-- 10th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>10. include/require - are commands that allow you to include external files in your PHP script.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+        &nbsp;&nbsp;&nbsp;require 'header.php';&nbsp;&nbsp;&nbsp;// Script stops if header.php is missing<br>
+        &nbsp;&nbsp;&nbsp;include 'menu.php';&nbsp;&nbsp;&nbsp;// Script continues even if menu.php is missing<br>
+        ?&gt;
+        </p>
+
+        <hr>
+
+        <!-- 11th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>11. Embedding PHP in HTML - PHP code can be embedded within HTML using the standard PHP tags The below statement dynamically inserts a heading into the HTML document.</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html lang="en"&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;PHP Syntax Example&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<u>&lt;?php echo "Hello, PHP!"; ?&gt;</u>&lt;/h1&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+        </p>
+
+        <hr>
+
+        <!-- 12th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>12. SGML or Short HTML Tags - the shortest option to initialize a PHP code. The script starts with <? and ends with ?>. This will only work by setting the short_open_tag setting in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the php.ini file to 'on'.</b></p>
+        
+        <p style="margin-left: 100px;"> 
+        &lt;?<br>  
+        // Here echo command will only work if setting is done as said before<br>
+        echo "Hello, world!";<br>
+        ?&gt;<br>
+        </p>
+
+        <hr>
+
+        <!-- 13th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>13. Single Line Comment - This is single line or short relevant explanations that one can add to their code. To add this, we need to begin the line with (//) or<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(#). </b></p>
+        
+        <p style="margin-left: 100px;"> 
+           // &nbsp;&nbsp;This is a single line comment<br>
+
+           # &nbsp;&nbsp;This is also a single line comment
+        </p>
+
+        <hr>
+
+        <!-- 14th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>14. Multi Line COmment - is used to accomodate multiple lines with single tag and can be extended to many lines
+            as required.To add this, need to begin and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the line with (/*...*/). 
+        </b></p>
+        
+        <p style="margin-left: 100px;"> /* This is a multi line comment<br>
+        &nbsp;&nbsp;&nbsp;In PHP variables are written<br>
+        &nbsp;&nbsp;&nbsp;by adding a $ sign at the<br>
+        &nbsp;&nbsp;&nbsp;beginning. */
+        </p>
+
+        <hr>
+
+        <!-- 15th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>15. Data Types :- PHP supports several data types, including</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            <ul>
+            <li style="margin-left: 100px;">String :- A sequence of characters.</li>
+            <li style="margin-left: 100px;">Integer :- Whole numbers.</li>
+            <li style="margin-left: 100px;">Float (Double) :- Numbers with a decimal point.</li>
+            <li style="margin-left: 100px;">Boolean :- Represents true or false.</li>
+            <li style="margin-left: 100px;">Array :- A collection of values.</li>
+            <li style="margin-left: 100px;">Object :- An instance of a class.</li>
+            <li style="margin-left: 100px;">NULL :- A special type representing a variable with no value.</li>
+            <li style="margin-left: 100px;">Resource :- A special type that holds a reference to external resources (like database connections).</li>
+            </ul>
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Arrays</u></b></h3>
+
+        <hr>
+
+
+        <!-- 16th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>16. Indexed Arrays :- use numeric indexes starting from 0. These arrays are ideal when you need to store a list of items where the order matters.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+        &nbsp;&nbsp;&nbsp;$fruits = array("apple", "banana", "cherry");<br>
+        echo $fruits[0]; // Outputs: apple<br>
+        ?&gt;
+        </p>
+
+        <hr>
+
+        <!-- 17th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>17. Associative Arrays :- use named keys, which are useful when you want to store data with meaningful identifiers instead of numeric indexes.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;$person = array("name" => "GFG", "age" => 30, "city" => "New York");<br>
+        echo $person["name"];<br>
+        ?&gt;
+        </p>
+
+        <hr>
+
+        <!-- 18th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>18. Multidimensional Array :- are array that contain other arrays as elements. These are used to represent more complex data structures, such as matrices or tables.</b></p>
+        
+        <p style="margin-left: 100px;"> &lt;?php<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;$students = array(<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"Anjali" => array("age" => 25, "grade" => "A"),<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"GFG" => array("age" => 22, "grade" => "B")<br>
+            );<br>
+        echo $students["GFG"]["age"];<br>
+        ?>
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>19. array_push() :- Adds elements to the end of an indexed array.</b></p>
+
+        <p style="margin-left: 100px;">
+            $fruits = ["apple", "banana"];<br>
+            array_push($fruits, "cherry");&nbsp;&nbsp;&nbsp;// Adds "cherry" to the end
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>20. array_unshift() :- Adds elements to the beginning of an indexed array.</b></p>
+
+        <p style="margin-left: 100px;">
+            array_unshift($fruits, "pear");&nbsp;&nbsp;&nbsp;// Adds "pear" to the beginning
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>21. Direct assignment :- Adds an element to an associated array.</b></p>
+
+        <p style="margin-left: 100px;">
+            $person["city"] = "New York";
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>22. array_pop() :- Removes the last element from an indexed array.</b></p>
+
+        <p style="margin-left: 100px;">
+            array_pop($fruits);
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>23. array_shift() :- Removes the first element from an indexed array.</b></p>
+
+        <p style="margin-left: 100px;">
+            array_shift($fruits);
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>24. unset() :- Removes a specific element from an array by key or index.</b></p>
+
+        <p style="margin-left: 100px;">
+            unset($fruits[2]);&nbsp;&nbsp;&nbsp;// Removes the element with index 2
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Array Functions</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>25. array_merge() :- This function combines 2 or more arrays into one.</b></p>
+
+        <p style="margin-left: 100px;">
+            $array1 = [1, 2, 3];<br>
+            $array2 = [4, 5, 6];<br>
+            $merged = array_merge($array1, $array2);<br>
+            print_r($merged);&nbsp;&nbsp;&nbsp;// Outputs: [1, 2, 3, 4, 5, 6]<br>
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>26. in_array() :- This function checks if a specific value exists in an array.</b></p>
+
+        <p style="margin-left: 100px;">
+            $fruits = ["Apple", "Banana", "Cherry"];<br>
+            if (in_array("Banana", $fruits)) {<br>
+            &nbsp;&nbsp;&nbsp;echo "Banana is in the array!";<br>
+            }
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>27. sort() :- This function sorts an indexed array in ascending order.</b></p>
+
+        <p style="margin-left: 100px;">
+            $numbers = [3, 1, 4, 1, 5];<br>
+            sort($numbers);<br>
+            print_r($numbers);&nbsp;&nbsp;&nbsp;// Outputs: [1, 1, 3, 4, 5]<br>
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u> Other Codes</u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>28. Class :- A class defines the structure of an object, it contains variables and functions.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;?php<br>
+            class GeeksforGeeks<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;// Constructor<br>
+            &nbsp;&nbsp;&nbsp;public function __construct(){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo 'The class "' . __CLASS__ . '" was initiated!';<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            }<br>
+            // Create a new object<br>
+            $obj = new GeeksforGeeks;<br>
+            ?&gt;
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>29. Constructor :- A constructor is a special function or method in a class that is automatically called when an object of the class is created. The constructor is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mainly used for initializing the object.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt?php<br>
+            class Car {<br>
+            &nbsp;&nbsp;&nbsp;public $model;<br>
+            &nbsp;&nbsp;&nbsp;public $color;<br>
+            &nbsp;&nbsp;&nbsp;// Constructor<br>
+            &nbsp;&nbsp;&nbsp;public function __construct($model, $color) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->model = $model;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->color = $color;<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+
+            &nbsp;&nbsp;&nbsp;public function display() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Model: $this->model, Color: $this->color";<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            }<br>
+            $myCar = new Car("Tesla", "Red");<br>
+            $myCar->display();<br>
+            ?&gt;
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>29. Destructor :- A destructor is a special method that is automatically called when an object is destroyed or goes out of scope. It is mainly used for cleaning up 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or releasing resources, such as closing file handles or database connections.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;?php<br>
+            class Database {<br>
+            &nbsp;&nbsp;&nbsp;public $connection;<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;// Constructor to initialize the connection<br>
+            &nbsp;&nbsp;&nbsp;public function __construct($hostname) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->connection = "Connected to database at $hostname";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $this->connection;<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;// Destructor to close the connection<br>
+            &nbsp;&nbsp;&nbsp;public function __destruct() {<Br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "\nConnection closed.";<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            }<br>
+            <br>
+            $db = new Database("localhost");<br>
+            ?&gt;
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>30. Access Modifier :- They control how and where the properties / mentods of a class can be accessed.There are 3 types :-<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public, protected and private</b></p>
+
+        <p style="margin-left: 100px;">
+            1. <u>public</u> :- can be accessed from anywhere, from within the class, by inherited (child) classes, and from outside the class.. If a property is declared &nbsp;&nbsp;&nbsp;public, its value can be read or changed from anywhere in your script. This is Default access specifier<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&lt;?php<br>
+            &nbsp;&nbsp;&nbsp;class Demo {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public $name = "GeeksforGeeks";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function showName() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->name;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;$obj = new Demo();<br>
+            &nbsp;&nbsp;&nbsp;echo $obj->name . "\n";<br>        
+            &nbsp;&nbsp;&nbsp;echo $obj->showName();<br>
+            &nbsp;&nbsp;&nbsp;?&gt;
+            <br>
+            <br>
+            2. <u>private</u> :- can be accessible only within the class that declares it. It is not accessible in child classes or from outside the class.<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&lt;?php<br>
+            &nbsp;&nbsp;&nbsp;class Myclass {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private $secret = "Top Secret";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private function getSecret() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->secret;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function revealSecret() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->getSecret();&nbsp;&nbsp;&nbsp;// Allowed internally<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;$obj = new MyClass();<br>
+            &nbsp;&nbsp;&nbsp;echo $obj->revealSecret();&nbsp;&nbsp;&nbsp;// Works<br>        
+            &nbsp;&nbsp;&nbsp;echo $obj->secret;&nbsp;&nbsp;&nbsp;// Error: Cannot access private property<br>
+            &nbsp;&nbsp;&nbsp;echo $obj->getSecret();&nbsp;&nbsp;&nbsp;// Error: Cannot access private method<br>
+            &nbsp;&nbsp;&nbsp;?&gt;
+            <br>
+            <br>
+            3. <u>protected</u> :- can only be accessed within the class itself and by inheriting classes (subclasses). It is not accessible from outside the class.<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&lt;?php<br>
+            &nbsp;&nbsp;&nbsp;class ParentClass {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protected $message = "Hello from Parent";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protected function showMessage() {<Br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->message;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+
+            &nbsp;&nbsp;&nbsp;class ChildClass extends ParentClass {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function getMessage() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->showMessage();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;$obj = new ChildClass();<br>
+            &nbsp;&nbsp;&nbsp;echo $obj->getMessage(); <br>
+            &nbsp;&nbsp;&nbsp;echo $obj->message;<br>
+            &nbsp;&nbsp;&nbsp;?&gt;
+
+        </p>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u> 3 ways of working with MySQl and PHP </u></b></h3>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>31. Using MySQLi object-oriented procedure :- can use the MySQLi object-oriented procedure to establish a connection to MySQL database from a PHP script.</b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;?php<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$servername = "localhost";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$username = "username";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$password = "password";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// Creating connection<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$conn = new mysqli($servername, $username, $password);<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// Checking connection<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if ($conn->connect_error) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die("Connection failed: " . $conn->connect_error);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;echo "Connected successfully";<br>
+            ?&gt;
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>32. Using MySQLi procedural procedure :- is a procedural approach of MySQLi to establish a connection to MySQL database from a PHP script as described below. </b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;?php<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$servername = "localhost";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$username = "username";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$password = "password";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// Creating connection<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$conn = mysqli_connect($servername, $username, $password);<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// Checking connection<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (!$conn) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die("Connection failed: " . mysqli_connect_error());<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;echo "Connected successfully";<br>
+            ?&gt;
+        </p>
+
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>33. Using PDO procedure (PHP Data Objects) :- in this method we connect to the database using data objects in PHP. </b></p>
+
+        <p style="margin-left: 100px;">
+            &lt;?php<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$servername = "localhost";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$username = "username";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$password = "password";<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// Creating connection<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$conn = mysqli_connect($servername, $username, $password);<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// setting the PDO error mode to exception<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Connected successfully";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;catch(PDOException $e)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Connection failed: " . $e->getMessage();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            ?&gt;
+        </p>
+
+        <hr>
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>34. 3 ways to Closing A Connection. </b></p>
+
+        <p style="margin-left: 100px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;1) <u><b>Using MySQLi object oriented procedure</b></u> :- $conn->close();<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;2) <u><b>Using MySQLi procedural procedure</b></u> :- mysqli_close($conn);<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;3) <u><b>Using PDO procedure</b></u> :- $conn = null;
+        </p>
+
+        <!--<div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>  </u></b></h3> -->
+        
+        <hr>
+
+
+
+
+    </div>
+    <div class="text-center" style="margin: 20px;" >        
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+    <!--  body area end-->
+</body>
+</html>

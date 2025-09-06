@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script - Must Know Commands</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #ff9c5f;
+            font-family: 'Segoe print';
+            font-size: 18px;
+        }
+
+        
+        .transparent-table,
+        .transparent-table th,
+        .transparent-table td {
+            background-color: transparent !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--  Header area start-->
+
+    <div class="col-sm-12 d-flex justify-content-around">       <!-- For the welcome image-->
+        <img class="img-fluid " src="images/bgimagejavascrit.png" width="100%" height="100%" >
+    </div>  
+
+    <!--  Header area end-->
+
+
+    <!--  body area start-->
+
+    <div class="container-fluid">
+        <h3 class="text-center mt-3"><b><u>Console & Debugging</u></b></h3>
+
+        <hr>
+
+        <!-- 1st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>1. To print messages or variables to the console.</b></p>
+        
+        <p style="margin-left: 100px;"> console.log()</p>
+
+        <hr>
+
+        <!-- 2nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>2. To display an error message in the console.</b></p>
+        
+        <p style="margin-left: 100px;"> console.error()</p>
+
+        <hr>
+
+        <!-- 3rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>3. To show warning message.</b></p>
+        
+        <p style="margin-left: 100px;"> console.warn()</p>
+
+        <hr>
+
+        <!-- 4th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>4. To display array / object data as table.</b></p>
+        
+        <p style="margin-left: 100px;"> console.table()</p>
+
+        <hr>
+
+
+        <!-- 5th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>5. To Pause JavaScript execution for debugging in developer tools.</b></p>
+        
+        <p style="margin-left: 100px;"> debugger;</p><br>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>JavaScript Objects</u></b></h3>
+
+        <hr>
+
+        <!-- 6th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>6. Array :- The Array object is used to store multiple values in a single variable.</b></p>
+        
+        <p style="margin-left: 100px;"> const cars = ["Saab", "Volvo", "BMW"];</p>
+
+        <hr>
+
+        <!-- 7th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>7. String :- A JavaScript string stores a series of characters like "John Doe". It can be any text inside double or single quotes.</b></p>
+        
+        <p style="margin-left: 100px;"> let carName1 = "Volvo XC60";<br>
+            let carName2 = 'Volvo XC60';
+        </p>
+
+        <hr>
+
+        <!-- 8th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>8. Number :- JavaScript has only one type of number. Numbers can be written with or without decimals.</b></p>
+        
+        <p style="margin-left: 100px;"> let x = 3.14;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// A number with decimals<br>
+            let y = 34;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// A number without decimals
+        </p>
+
+        <hr>
+
+        <!-- 9th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>9. Math :- This object allows you to perform mathematical task. It is not a constructor.</b></p>
+        
+        <p style="margin-left: 100px;"> let x = Math.PI;<br>
+            let y = Math.sqrt(16);
+        </p>
+
+        <hr>
+
+        <!-- 10th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>10. Date :- The Date object works with dates and times. They are created with new Date().</b></p>
+        
+        <p style="margin-left: 100px;"> const time = new Date();</p>
+
+        <hr>
+
+        <!-- 11th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>11. Javascript Object :- It is a collection of named values.</b></p>
+        
+        <p style="margin-left: 100px;"> 
+            const person = { firstName: "John",mlastName: "Doe", age: 50, eyeColor: "blue" };
+        </p>
+
+        <hr>
+
+        <!-- 12th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>12. Set :- It is a collection of unique values. Each value can occur once in a Set. The values can be of any type - primary vales or objects .</b></p>
+        
+        <p style="margin-left: 100px;"> 1) Pass an Array to the new Set() constructor : &nbsp;&nbsp;&nbsp;&nbsp;const letters = new Set(["a","b","c"]);<br>
+                                        <br>
+                                        2) Create a Set and add values : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const letters = new Set();<br>
+                                        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letters.add("a");<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letters.add("b");<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letters.add("c");
+        </p>
+
+        <hr>
+
+        <!-- 13th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>13. Map :- A Map holds key-value pairs where the keys can be any datatype. It remembers the original insertion order of the keys .</b></p>
+        
+        <p style="margin-left: 100px;"> const fruits = new Map ([<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;["apples", 500],<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;["bananas", 300],<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;["oranges", 200]<br>
+		  &nbsp;&nbsp;]);<br><br>
+          To get elements from a map with the get() method:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          let value = fruits.get("apples");
+        </p>
+
+        <hr>
+
+        <!-- 14th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>14. Classes :- Class is a type of function, and the properties are assigned inside a constructor() method:</b></p>
+        
+        <p style="margin-left: 100px;"> class Car {  // Create a class<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor(brand) {  // Class constructor<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.carname = brand;  // Class body/properties<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+        </p>
+
+        <hr>
+
+        <!-- 15th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>15. Error :- The Error object provides error information when an error occurs.</b></p>
+        
+        <p style="margin-left: 100px;"> try {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adddlert("Welcome");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catch(err) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML =<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;err.name + "&lt;br&gt;" + err.message;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+        </p>
+
+        <hr>
+
+        <!-- 16th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>16. Boolean :- Boolean can have one of two values: true or false. It is a function to find out if an expression is true.</b></p>
+        
+        <p style="margin-left: 100px;"> Boolean(10 > 9)</p>
+
+        <hr>
+
+        <!-- 17th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>17. Operators :- Operators are used to assign values, compare values, perform arithmetic operations, and more. There are different types of JavaScript 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;operators:</b></p>
+        
+        <p style="margin-left: 100px;"> 1) Arithmetic Operators - are used to perform arithmetic between variables and values :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If y = 5, the table below explains the arithmetic operators<br>
+
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6 aign-content-center">
+                    <table class="table table-bordered text-center transparent-table" style="border-color: black;">
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Example</th>
+                                <th>Results</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> + </td>
+                                <td>Addition</td>
+                                <td>x = y + 2</td>
+                                <td>y=5, x=7</td>
+                            </tr>
+                            <tr>
+                                <td> - </td>
+                                <td>Subtraction</td>
+                                <td>x = y - 2</td>
+                                <td>y=5, x=3</td>
+                            </tr>
+                            <tr>
+                                <td> * </td>
+                                <td>Multiplication</td>
+                                <td>x = y*2</td>
+                                <td>y=5, x=10</td>
+                            </tr>
+                            <tr>
+                                <td> ** </td>
+                                <td>Exponentiation</td>
+                                <td>x = y**2</td>
+                                <td>y=5, x=25</td>
+                            </tr>
+                            <tr>
+                                <td> / </td>
+                                <td>Division</td>
+                                <td>x = y / 2</td>
+                                <td>y=5, x=2.5</td>
+                            </tr>
+                            <tr>
+                                <td> % </td>
+                                <td>Remainder</td>
+                                <td>x = y % 2</td>
+                                <td>y=5, x=1</td>
+                            </tr>
+                            <tr>
+                                <td> ++ </td>
+                                <td>Pre increment</td>
+                                <td>x = ++y</td>
+                                <td>y=6, x=6</td>
+                            </tr>
+                            <tr>
+                                <td> ++ </td>
+                                <td>Post increment</td>
+                                <td>x = y++</td>
+                                <td>y=6, x=5</td>
+                            </tr>
+                            <tr>
+                                <td> -- </td>
+                                <td>Pre decrement</td>
+                                <td>x = --y</td>
+                                <td>y=4, x=4</td>
+                            </tr>
+                            <tr>
+                                <td> -- </td>
+                                <td>Post decrement</td>
+                                <td>x = y--</td>
+                                <td>y=4, x=5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Assignment Operators - are used to assign values to JavaScript variables :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If x = 10 and y = 5, the table below explains the assignment operators<br><br>
+
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6 aign-content-center">
+                    <table class="table table-bordered text-center transparent-table" style="border-color: black;">
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Example</th>
+                                <th>Same As</th>
+                                <th>Results</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> = </td>
+                                <td>x = y</td>
+                                <td>x = y</td>
+                                <td>x = 5</td>
+                            </tr>
+                            <tr>
+                                <td> += </td>
+                                <td>x += y</td>
+                                <td>x = x + y</td>
+                                <td>x = 15</td>
+                            </tr>
+                            <tr>
+                                <td> -+ </td>
+                                <td>x -= y</td>
+                                <td>x = x - y</td>
+                                <td>x = 5</td>
+                            </tr>
+                            <tr>
+                                <td> *= </td>
+                                <td>x *= y</td>
+                                <td>x = x * y</td>
+                                <td>x = 50</td>
+                            </tr>
+                            <tr>
+                                <td> /= </td>
+                                <td>x /= y</td>
+                                <td>x = x / y</td>
+                                <td>x = 2</td>
+                            </tr>
+                            <tr>
+                                <td> %= </td>
+                                <td>x %= y</td>
+                                <td>x = x % y</td>
+                                <td>x = 0</td>
+                            </tr>
+                            <tr>
+                                <td> : </td>
+                                <td>x: 45</td>
+                                <td>size.x = 45</td>
+                                <td>x = 45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Comparison Operators - are used in logical statements to determine equality or difference between variables or values :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If x = 5, the table below explains the comparison operators<br><br>
+            
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6 aign-content-center">
+                    <table class="table table-bordered text-center transparent-table" style="border-color: black;">
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Comaparing</th>
+                                <th>Results</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> == </td>
+                                <td>equal to</td>
+                                <td>x == 8</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td> == </td>
+                                <td>equal to</td>
+                                <td>x == 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td> === </td>
+                                <td>equal value and type</td>
+                                <td>x === "5"</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td> === </td>
+                                <td>equal value and type</td>
+                                <td>x === 5</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td> != </td>
+                                <td>not equal</td>
+                                <td>x != 8</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td> !== </td>
+                                <td>not equal value or type</td>
+                                <td>x !== "5"</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td> !== </td>
+                                <td>not equal value or type</td>
+                                <td>x !== 5</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td> > </td>
+                                <td>greater than</td>
+                                <td>x > 8</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td> < </td>
+                                <td>less than</td>
+                                <td>x < 8</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td> >= </td>
+                                <td>greater or equal to</td>
+                                <td>x >= 8</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td> <= </td>
+                                <td>less or equal to</td>
+                                <td>x <= 8</td>
+                                <td>true</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) Logical Operators - are used to determine the logic between variables or values :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If x = 6 and y = 3, the table below explains the logical operators<br><br>
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6 aign-content-center">
+                    <table class="table table-bordered text-center transparent-table" style="border-color: black;">
+                        <thead>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> && </td>
+                                <td>AND</td>
+                                <td>(x < 10 && y > 1) is true</td>
+                            </tr>
+                            <tr>
+                                <td> || </td>
+                                <td>OR</td>
+                                <td>(x === 5 || y === 5) is false</td>
+                            </tr>
+                            <tr>
+                                <td> ! </td>
+                                <td>NOT</td>
+                                <td>!(x === y) is true</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) Conditional Operators -  assigns a value to a variable based on a condition :-<br><br>
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-6 aign-content-center">
+                    <table class="table table-bordered text-center transparent-table" style="border-color: black;">
+                        <thead>
+                            <tr>
+                                <th>Syntax</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>(condition) ? x : y</td>
+                                <td>(z < 18) ? x : y</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6) Type Operators - returns the type of a variable, object, function or expression :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type of "John"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns string<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type of 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns number<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7) delete Operator - deletes a property from an object :-<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const person = {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firstName:"John",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastName:"Doe",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age:50,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eyeColor:"blue"<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete person.age;   ( This deletes the age from the above code )<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8) in Operator - returns true if a property is in an object, otherwise false :=<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const person = {firstName:"John", lastName:"Doe", age:50};<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;("firstName" in person);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;("age" in person);<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The result will return true for the above<br>
+
+        </p>
+
+        <hr>
+
+        <!-- 18th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>18. Statement - Tells the browser to write "Hello Dolly." inside an HTML element with id="demo".</b></p>
+        
+        <p style="margin-left: 100px;"> document.getElementById("demo").innerHTML = "Hello Dolly.";</p><br>
+
+        <div style="border: 1px solid black;"></div>
+
+        <h3 class="text-center mt-3"><b><u>Other Important Commands</u></b></h3>
+
+        <hr>
+
+        <!-- 19th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>19. Basic Input / Output - alert() and prompt() :- Alert sends info to the user through a dialogue box, while the prompt asks for a response.</b></p>
+        
+        <p style="margin-left: 100px;">alert() :- alert("message");<br><br>
+            prompt() :- stringVar = prompt("message")
+        </p>
+
+        <hr>
+
+        <!-- 20th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>20. SetTimeout() - setTimeout(command, time); :- It is a native JavaScript function. It lets you automatically run commands at a specific time without user<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input.</b></p>
+        
+        <p style="margin-left: 100px;"> setTimeout(myfunction, 5000);</p>
+
+        <hr>
+
+        <!-- 21st commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>21. Setinterval() :- The setInterval() method calls a function at specified intervals (in milliseconds).</b></p>
+        
+        <p style="margin-left: 100px;"> setInterval(command, time);</p>
+
+        <hr>
+
+        <!-- 22nd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>22. ClearTimeout() and ClearInterval() :- .</b></p>
+        
+        <p style="margin-left: 100px;"> <u>ClearTimeout</u> and <u>ClearInterval</u> take the variable 
+            name for a set command and then delete it from memory</p>
+
+        <hr>
+
+        <!-- 23rd commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>23. Var :- Variables are declared in various data types which are the prefixes while writing the code.</b></p>
+        
+        <p style="margin-left: 100px;"> var i = true ? Integer.valueOf(1) : "ABC";</p>
+
+        <hr>
+
+        <!-- 24th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>24. Self-calling Function :- A self-calling function is a JavaScript command that runs as soon as you create it.</b></p>
+        
+        <p style="margin-left: 100px;"> (function () {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("output").innerHTML =<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Self-invoked function is executed!";<br>
+        } ());
+        </p>
+
+        <hr>
+
+        <!-- 25th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>25. Math.random() :- This command generates random numbers. It returns a floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).</b></p>
+        
+        <p style="margin-left: 100px;"> let randomNumber = Math.random()<br>
+            console.log(randomNumber)<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Output: 0.16668531572829082
+
+        </p>
+
+        <hr>
+
+        <!-- 26th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>26. Map() :- The map() command lets you loop through an array or collection.</b></p>
+        
+        <p style="margin-left: 100px;"> const numbers = [65, 44, 12, 4];<br>
+            const newArr = numbers.map(myFunction)<br><br>
+            function myFunction(num) {<br>
+            &nbsp;&nbsp;&nbsp;return num * 10;<br>
+            }
+        </p>
+
+        <hr>
+
+        <!-- 27th commamnd -->
+       
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>27. string.toLowerCase() - The toLowerCase() function delivers a new string that has been transformed to all lower cases from the old string.</b></p>
+        
+        <p style="margin-left: 100px;"> const sentence = "The quick brown fox jumps over the lazy dog.";<br>
+            console.log(sentence.toLowerCase());<br><br>
+            output :- "the quick brown fox jumps over the lazy dog."
+        </p>
+
+        <hr>
+
+         <!-- 28th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>28. return Function - Functions usually calculate a return value.</b></p>
+        
+        <p style="margin-left: 100px;"> var a = newFunction(6, 4);<br>
+            function newFunction(x, y)  // Function returns the multiplication of x and y<br><br>
+            &nbsp;&nbsp;&nbsp;output - 24
+        </p>
+
+        <hr>
+        
+        <!-- 29th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>29. floor :- The floor() method rrounds-up a number to the most next integer and delivers the result.</b></p>
+        
+        <p style="margin-left: 100px;">Math.floor(1.6);</p>
+
+        <hr>
+
+        <!-- 30th commamnd -->
+
+        <p style="margin-left: 20px; margin-top: 15px;"><b>30.   </b></p>
+        
+        <p style="margin-left: 100px;"> </p>
+
+        <hr>
+        
+    </div>
+    <div class="text-center" style="margin: 20px;" >        
+        <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+    <!--  body area end-->
+</body>
+</html>
